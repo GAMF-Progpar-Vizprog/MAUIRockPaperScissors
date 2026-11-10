@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIRockPaperScissors.MainPage">
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,*,*" Margin="10">
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="HeightRequest" Value="80"/>
+                <Setter Property="WidthRequest" Value="80"/>
+                <Setter Property="CornerRadius" Value="40"/>
+                <Setter Property="FontSize" Value="32"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="Purple"/>
+            </Style>
+        </Grid.Resources>
+        <!-- Buttons for Rock, Paper, Scissors -->
+        <Button Grid.Row="0" Grid.Column="0" Text="✊" Clicked="bt_Clicked"/>
+        <!-- Rock -->
+        <Button Grid.Row="0" Grid.Column="1" Text="✋" Clicked="bt_Clicked"/>
+        <!-- Paper -->
+        <Button Grid.Row="0" Grid.Column="2" Text="✌" Clicked="bt_Clicked"/>
+        <!-- Scissors -->
+        <!-- Labels for User, Computer, and Result -->
+        <Label x:Name="llUser" Grid.Row="1" Grid.ColumnSpan="3"
+               HorizontalTextAlignment="Center" FontSize="24"/>
+        <Label x:Name="llComputer" Grid.Row="2" Grid.ColumnSpan="3"
+               HorizontalTextAlignment="Center" FontSize="24"/>
+        <Label x:Name="llResult" Grid.Row="3" Grid.ColumnSpan="3"
+               HorizontalTextAlignment="Center" FontSize="24"/>
+    </Grid>
+</ContentPage>

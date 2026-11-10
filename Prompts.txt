@@ -1,0 +1,5 @@
+
+Create the user interface of a MAUI app developed for .NET 8.0 using XAML, which implements the rock-paper-scossors game. The UI should contain a grid with inline row and column definitions ang have four rows and three columns. Three buttons are needed in the first row. Their height and width has to be 80 and they have to be rouned with a radius of 40. Each button contains an icon, which is defined by a unicode character (symbols for rock, paper,scissors). Define the common properties of the buttons at grid level as style definitions. Create a common event handler for the buttons with the name bt_Clicked. Place three Labels with the names llUser, llComputer, llResult in the next three rows and center their text horizontally. They should use the whole row.
+
+
+Create the bt_Click event handler that defines the move of the computer using random number generation, it displays the move of the computer using the Label llComputer. It determines the move of the user based on the clicked button, it displays the move of the user using the Label llUser. It compares the two moves and displays the result using the Label llResult.
